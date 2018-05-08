@@ -15,4 +15,4 @@ The TestScript.js has a number of test cases for valid and invalid input to make
 
 If you just want to run the code without modification you should be able to use the command "node TestScript.js" from the main directory to see all of the test cases present in the test script.
 
-If you would like to use the test your own input to the class you can use the command "node Runner.js" and modify the dollar amount passed into the DollarAmountReader class. This class does throw errors for invalid input, so you should in production usage you should attempt to catch errors thrown by the class. You can see a limited sample of this in the TestScript.js file.
+If you would like to use the test your own input to the class you can use the command "node Runner.js" and modify the dollar amount passed into the DollarAmountReader class. This class does throw errors for invalid input, so in production usage you should attempt to catch errors thrown by the class. You can see a limited sample of this in the TestScript.js file.
