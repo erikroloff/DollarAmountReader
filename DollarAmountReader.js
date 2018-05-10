@@ -1,6 +1,6 @@
 /**
  * Reads a dollar amount as text given a string in the expected
- * format of starting with a dollar sign "$" and ending with two decimal points.
+ * format of starting with a dollar sign "$" and ending with two places left of the decimal ($1212.12).
  * @constructor
  * @param {string} dollarInputValue - The dollar amount in string format that might be on a form.
  */
@@ -44,7 +44,7 @@ class DollarAmountReader {
     // Strip dollar sign
     var dollarString = this.dollarInputValue.substr(1);
 
-    // Checking for two decimal points and all numbers
+    // Checking for two decimal places and all numbers
     var decimalRegex  = /^\d+(?:\.\d{2})$/;
     if (!decimalRegex.test(dollarString)) {
       throw "Invalid dollar amount, must have two decimal places and only numbers without commas";
@@ -60,7 +60,7 @@ class DollarAmountReader {
    * @return {integer}      return result for this
    */
   convertInputToNumber(dollarInput) {
-    // Strip dollar sign and decimal points
+    // Strip dollar sign and decimal places
     var dollarString = dollarInput.substr(1);
     return parseInt(dollarString);
   }
