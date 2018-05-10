@@ -1,6 +1,6 @@
 /**
  * Reads a dollar amount as text given a string in the expected
- * format of starting with a dollar sign "$" and ending with two places left of the decimal ($1212.12).
+ * format of starting with a dollar sign "$" and ending with two places right of the decimal ($1212.12).
  * @constructor
  * @param {string} dollarInputValue - The dollar amount in string format that might be on a form.
  */
